@@ -79,3 +79,28 @@ button:hover {
     background: #2ea043;
 }
 
+.result {
+    text-align: center;
+}
+
+.result h2{
+    margin-bottom: 20px;
+}
+
+.review{
+    text-align: left;
+    margin-top: 20px;
+}
+
+.review{
+    text-align: left;
+    margin-top: 20px;
+}
+
+.correct{
+    color: #2ea043;
+}
+
+.wrong{
+    color: #e74c3c;
+}
