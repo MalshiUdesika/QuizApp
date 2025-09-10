@@ -72,6 +72,11 @@ function loadQuiz() {
     c_text.innerText = currentQuizData.c;
     d_text.innerText = currentQuizData.d;
 
+     document.querySelector(".quiz-header").classList.add("fade");
+     setTimeout(() => {
+    document.querySelector(".quiz-header").classList.remove("fade");
+}, 500);
+
     progress.style.width = ((currentQuiz / quizData.length) * 100) + "%";
 
     resetTimer();
@@ -151,4 +156,15 @@ function showResult() {
         </div>
         `;
     }
+
+    function showResult() {
+  const emoji = score >= quizData.length / 2 ? "🎉" : "😢";
+  quiz.innerHTML = `
+    <div class="result">
+      <h2>You Scored ${score}/${quizData.length} ${emoji}</h2>
+      <button onclick="location.reload()">Play Again</button>
+    </div>
+  `;
+}
+
 

@@ -6,12 +6,13 @@
 }
 
 body{
-    background: #0d1117;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
     color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
 }
 
 .quiz-container{
@@ -137,4 +138,25 @@ button:hover {
 
 #welcome-screen button:hover {
     background: #2ea043;
+}
+
+.quiz-container, .welcome-screen, .result {
+  background: #1c1f26;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.5);
+  transition: transform 0.3s ease;
+}
+
+.quiz-container:hover {
+  transform: scale(1.02);
+}
+
+.fade {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
 }
