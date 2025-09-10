@@ -104,3 +104,37 @@ button:hover {
 .wrong{
     color: #e74c3c;
 }
+
+.welcome-screen {
+    text-align: center;
+    background: #161b22;
+    padding: 50px;
+    border-radius: 12px;
+    width: 400px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+}
+
+.welcome-screen h1{
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.welcome-screen p{
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+#welcome-screen button{
+    background: #238636;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+#welcome-screen button:hover {
+    background: #2ea043;
+}
