@@ -34,7 +34,7 @@ const quizData = [
 ];
 
 const quiz = document.querySelector(".quiz-container");
-const answerEls = document.querySelector(".answer");
+const answerEls = document.querySelectorAll(".answer");
 const questionEl = document.getElementById("question");
 const a_text = document.getElementById("a_text");
 const b_text = document.getElementById("b_text");
@@ -46,7 +46,7 @@ const timerEl = document.getElementById("time");
 
 let currentQuiz = 0;
 let score = 0;
-let timeleft = 15;
+let timeLeft = 15;
 let timer;
 let answerReview = [];
 
@@ -61,7 +61,7 @@ function loadQuiz() {
     c_text.innerText = currentQuizData.c;
     d_text.innerText = currentQuizData.d;
 
-    progress.style.width = ((currentQuiz / quizDate.length) * 100) + "%";
+    progress.style.width = ((currentQuiz / quizData.length) * 100) + "%";
 
     resetTimer();
 }
