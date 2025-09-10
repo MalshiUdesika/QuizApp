@@ -7,6 +7,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="welcome-screen" id="welcome-screen">
+        <h1>Welcome to the Quiz</h1>
+        <p>Test your knowladge with some questions.You have <strong>15 seconds</strong> per question</p>
+        <button id="start-btn">Start Quiz</button>
+    </div>
+
+    <div class="quiz-container" id="quiz" style="display:none;">
     <div class="quiz-container">
         <div class="progress-bar">
             <div class="progress" id="progress"></div>
@@ -34,6 +41,7 @@
             </ul>
         </div>
         <button id="submit">Submit</button>
+    </div>
     </div>
      
     <script src="script.js"></script>
