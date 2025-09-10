@@ -1,3 +1,14 @@
+    const welcomeScreen = document.getElementById("welcome-screen");
+    const quizContainer = document.getElementById("quiz");
+    const startBtn = document.getElementById("start-btn");
+
+    startBtn.addEventListener("click", ()=>{
+        welcomeScreen.style.display = "none";
+        quizContainer.style.display = "block";
+        loadQuiz();
+    });
+
+
 const quizData = [
     {
         question: "Which language runs in a web browser?",
@@ -140,3 +151,4 @@ function showResult() {
         </div>
         `;
     }
+
